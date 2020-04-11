@@ -1,0 +1,29 @@
+.wrapper {
+  width: 80%;
+  background-color: darkgray;
+  height: 899px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 10% 80% 10%;
+  gap: 5px;
+  margin: 0 auto;
+}
+
+.navbar {
+  background-color: aquamarine;
+  grid-column: 1/-1;
+}
+
+.body {
+  background-color: red;
+  grid-column: 1/11;
+  grid-row: 2/3;
+}
+.aside {
+  background-color: blueviolet;
+  grid-column: span 2;
+}
+.footer {
+  background-color: coral;
+  grid-column: 1/-1;
+}
