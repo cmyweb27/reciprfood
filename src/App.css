@@ -1,29 +1,49 @@
 .wrapper {
-  width: 80%;
-  background-color: darkgray;
-  height: 899px;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 10% 80% 10%;
-  gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 10px;
+  border: solid 1px gray;
   margin: 0 auto;
 }
-
-.navbar {
-  background-color: aquamarine;
-  grid-column: 1/-1;
+.image {
+  width: 270px;
+  margin: 0 auto;
+}
+img {
+  width: 100%;
+}
+.card {
+  margin: 0 auto;
+}
+.raspberry {
+  text-align: center;
+  color: grey;
+  font-size: 1.2rem;
 }
 
-.body {
-  background-color: red;
-  grid-column: 1/11;
-  grid-row: 2/3;
+.btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 7px 16px;
+  margin: 20px 20px;
+  background-color: #3fbf7f;
+  color: white;
 }
-.aside {
-  background-color: blueviolet;
-  grid-column: span 2;
+.btn:hover {
+  background-color: grey;
+  cursor: grab;
+  color: black;
 }
-.footer {
-  background-color: coral;
-  grid-column: 1/-1;
+i {
+  padding-right: 10px;
+}
+.anchor {
+  font-size: 1.5rem;
+}
+.star {
+  display: flex;
+  justify-content: center;
+  color: yellowgreen;
+  cursor: pointer;
 }
