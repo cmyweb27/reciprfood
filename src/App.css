@@ -1,13 +1,13 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
   gap: 10px;
   border: solid 1px gray;
-  margin: 0 auto;
 }
 .image {
-  width: 300px;
-  margin: 0 auto;
+  width: 90%;
+  margin: 20px auto;
+  border-bottom: solid #c3c0c0 1px;
 }
 img {
   width: 100%;
@@ -37,7 +37,7 @@ i {
   padding-right: 10px;
 }
 .anchor {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .star {
   display: flex;
