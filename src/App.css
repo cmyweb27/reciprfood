@@ -6,15 +6,13 @@
   margin: 0 auto;
 }
 .image {
-  width: 270px;
+  width: 300px;
   margin: 0 auto;
 }
 img {
   width: 100%;
 }
-.card {
-  margin: 0 auto;
-}
+
 .raspberry {
   text-align: center;
   color: grey;

@@ -1,19 +1,26 @@
 import React from "react";
-
+import Card from "./Card";
 const Body = () => {
   return (
-    <div className="body">
-      <div className="image">
-        <img src="images/rad.jpg" alt="rad" />
+    <div className="wrapper">
+      <div className="">
+        <Card />
       </div>
-      <div className="image">
-        <img src="images/rad.jpg" alt="rad" />
+      <div className="">
+        <Card />
       </div>
-      <div className="image">
-        <img src="images/rad.jpg" alt="rad" />
+      <div className="">
+        <Card />
       </div>
-      <div className="image">
-        <img src="images/rad.jpg" alt="rad" />
+      <div className="">
+        <Card />
+      </div>
+
+      <div className="">
+        <Card />
+      </div>
+      <div className="">
+        <Card />
       </div>
     </div>
   );
