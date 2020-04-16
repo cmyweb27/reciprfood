@@ -1,0 +1,19 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 90px 1fr 90px;
+}
+.wrapper > * {
+  grid-column: 2/3;
+}
+.wrapper > .header {
+  background-color: bisque;
+  grid-column: 1/-1;
+}
+ul {
+  display: flex;
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
