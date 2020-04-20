@@ -5,14 +5,16 @@ const Card = (props) => {
   return (
     <div className="container image">
       <img src={props.image} alt="rad" />
-      <p className="raspberry">{faker.commerce.productName()}</p>
+      <p className="raspberry">{faker.commerce.product()}</p>
 
       <p className="raspberry">
-        <span>&#8358;</span> {faker.commerce.price()}
+        {" "}
+        <span>&#8358;</span>
+        {faker.commerce.price()}
       </p>
       <p className="btn">
-        <i class="material-icons">shopping_cart</i>
-        <a href className="anchor">
+        <i className="material-icons">shopping_cart</i>
+        <a href="#" className="anchor">
           Add to Cart
         </a>
       </p>

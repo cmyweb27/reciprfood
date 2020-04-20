@@ -3,36 +3,40 @@
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 10px;
   margin-bottom: 20px;
+  margin-top: 55px;
 }
 
 .navbar {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 65px;
+  grid-template-rows: 60px;
+  background-color: white;
+  position: fixed;
   width: 100%;
+  top: 0px;
 }
-.sidebar {
-  grid-column: 1/ -1;
-
-  background-color: #c75a00;
+.logo {
+  color: #9a5600;
+  font-size: 2rem;
+  align-self: center;
 }
-
 .menu-items {
+  grid-column: 7 / span 4;
   display: flex;
   padding: 0;
-  justify-content: flex-end;
-  align-items: center;
-  list-style: none;
-  color: whitesmoke;
+
+  color: #9a5600;
+}
+li > a {
+  text-decoration: none;
+  color: #8d5102;
 }
 .menu-items > li {
+  font-weight: 600;
+  flex: 1;
   font-size: 1.5rem;
   cursor: pointer;
-  margin-left: 20px;
-  margin-right: 10px;
-}
-.menu-items > :nth-child(3n) {
-  margin-right: 40px;
+  list-style: none;
 }
 
 .image {
@@ -45,6 +49,7 @@
 }
 img {
   width: 100%;
+  object-fit: cover;
 }
 
 .raspberry {
@@ -59,7 +64,7 @@ img {
   text-align: center;
   padding: 7px 16px;
   margin: 20px 20px;
-  background-color: #ffac44;
+  background-color: #9a5600;
   color: white;
 }
 .btn:hover {
@@ -72,14 +77,10 @@ i {
 }
 .anchor {
   font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
 }
-.star {
-  display: flex;
 
-  justify-content: center;
-  color: yellowgreen;
-  cursor: pointer;
-}
 .footer {
   width: 100%;
   background-color: #9a5600;

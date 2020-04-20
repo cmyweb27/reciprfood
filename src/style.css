@@ -45,13 +45,13 @@ body {
 .bm-burger-button {
   width: 30px;
   height: 30px;
-  left: 19px;
-  top: 20px;
+  right: 19px;
+  top: 15px;
   position: fixed;
 }
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
-  background: white;
+  background: #9a5600;
 }
 
 /* Position and sizing of clickable cross button */
