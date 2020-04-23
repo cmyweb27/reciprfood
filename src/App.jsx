@@ -14,6 +14,7 @@ function App() {
       <div className="">
         <Body />
       </div>
+
       <div>
         <Footer />
       </div>

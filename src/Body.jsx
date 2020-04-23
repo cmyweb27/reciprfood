@@ -1,27 +1,21 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "./Card";
+import { context } from "./context";
+
 const Body = () => {
+  const mix = useContext(context);
+
   return (
     <div className="wrapper">
-      <div className="">
-        <Card image="images/pizza-2.jpg" />
-      </div>
-      <div className="">
-        <Card image="images/pizza-1.jpg" />
-      </div>
-      <div className="">
-        <Card image="images/pizza-3.jpg" />
-      </div>
-      <div className="">
-        <Card image="images/pizza-2.jpg" />
-      </div>
-
-      <div className="">
-        <Card image="images/pizza-3.jpg" />
-      </div>
-      <div className="">
-        <Card image="images/pizza-3.jpg" />
-      </div>
+      {mix.map((x) => (
+        <div key={x.id}>
+          <Card
+            image="images/pizza-3.jpg"
+            price={x.productPrice}
+            name={x.productName}
+          />
+        </div>
+      ))}
     </div>
   );
 };

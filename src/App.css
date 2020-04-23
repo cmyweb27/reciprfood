@@ -5,7 +5,10 @@
   margin-bottom: 20px;
   margin-top: 55px;
 }
-
+.icon {
+  margin: 0px;
+  padding: 0px;
+}
 .navbar {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -21,7 +24,7 @@
   align-self: center;
 }
 .menu-items {
-  grid-column: 7 / span 4;
+  grid-column: 7 / span 5;
   display: flex;
   padding: 0;
 
@@ -48,8 +51,8 @@ li > a {
   margin: 20px auto 0px auto;
 }
 img {
+  height: 100%;
   width: 100%;
-  object-fit: cover;
 }
 
 .raspberry {
