@@ -1,0 +1,10 @@
+{
+	"auth": {
+		"chownow0418526a": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"customAuth": false
+		}
+	}
+}

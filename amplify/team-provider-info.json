@@ -1,0 +1,20 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-chownow-dev-02139-authRole",
+            "UnauthRoleArn": "arn:aws:iam::732910756382:role/amplify-chownow-dev-02139-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::732910756382:role/amplify-chownow-dev-02139-authRole",
+            "Region": "eu-central-1",
+            "DeploymentBucketName": "amplify-chownow-dev-02139-deployment",
+            "UnauthRoleName": "amplify-chownow-dev-02139-unauthRole",
+            "StackName": "amplify-chownow-dev-02139",
+            "StackId": "arn:aws:cloudformation:eu-central-1:732910756382:stack/amplify-chownow-dev-02139/dfcdd520-88dd-11ea-9b2b-06a619e5de86",
+            "AmplifyAppId": "d3fwo6h872174c"
+        },
+        "categories": {
+            "auth": {
+                "chownow0418526a": {}
+            }
+        }
+    }
+}

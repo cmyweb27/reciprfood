@@ -1,6 +1,7 @@
 .wrapper {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+
   gap: 10px;
   margin-bottom: 20px;
   margin-top: 55px;
@@ -30,6 +31,7 @@
 
   color: #9a5600;
 }
+
 li > a {
   text-decoration: none;
   color: #8d5102;
@@ -41,24 +43,33 @@ li > a {
   cursor: pointer;
   list-style: none;
 }
-
-.image {
+.but1 {
+  text-align: center;
+  padding: 7px 16px;
+  margin: 5px 20px 0px 20px;
+}
+.but {
+  text-align: center;
+  padding: 7px 16px;
+  margin: 0px 20px 20px 20px;
+}
+.contain {
   border-bottom: solid #c3c0c0 1px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-}
-.container {
   width: 90%;
+
   margin: 20px auto 0px auto;
 }
 img {
-  height: 100%;
   width: 100%;
 }
 
 .raspberry {
+  text-transform: capitalize;
   text-align: center;
   color: grey;
-  font-size: 1.2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
 }
 
 .btn {
@@ -69,6 +80,17 @@ img {
   margin: 20px 20px;
   background-color: #9a5600;
   color: white;
+}
+.on {
+  font-size: 1.2rem;
+}
+.si {
+  font-size: 1.2rem;
+  align-self: center;
+}
+.not {
+  display: flex;
+  justify-content: center;
 }
 .btn:hover {
   background-color: grey;
@@ -113,6 +135,10 @@ i {
   text-align: center;
   margin: 3px;
   color: rgba(255, 255, 255, 0.7);
+}
+.auth {
+  width: 30px;
+  margin-right: 30px;
 }
 @media (max-width: 500px) {
   .menu-items {
