@@ -1,24 +1,16 @@
 import React from "react";
 import { stack as Menu } from "react-burger-menu";
-
+import { Link } from "react-router-dom";
 export default (props) => {
   return (
     <Menu width={"100%"}>
-      <a className="menu-item" href="/">
-        Home
-      </a>
+      <Link to="/">Home</Link>
 
-      <a className="menu-item" href="/burgers">
-        Burgers
-      </a>
+      <Link to="/Cart">Cart</Link>
 
-      <a className="menu-item" href="/pizzas">
-        Pizzas
-      </a>
+      <Link to="/pizzas">Pizzas</Link>
 
-      <a className="menu-item" href="/desserts">
-        Desserts
-      </a>
+      <Link to="/desserts">Drinks</Link>
     </Menu>
   );
 };

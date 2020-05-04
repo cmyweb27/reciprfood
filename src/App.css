@@ -1,8 +1,8 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  justify-content: center;
 
-  gap: 10px;
   margin-bottom: 20px;
   margin-top: 55px;
 }
@@ -51,12 +51,12 @@ li > a {
 .but {
   text-align: center;
   padding: 7px 16px;
-  margin: 0px 20px 20px 20px;
+  margin: 0px auto;
 }
 .contain {
   border-bottom: solid #c3c0c0 1px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-  width: 90%;
+  width: 85%;
 
   margin: 20px auto 0px auto;
 }
@@ -67,7 +67,7 @@ img {
 .raspberry {
   text-transform: capitalize;
   text-align: center;
-  color: grey;
+  color: black;
   font-weight: 600;
   font-size: 1.5rem;
 }

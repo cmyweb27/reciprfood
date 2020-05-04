@@ -1,30 +1,27 @@
-import React, { useState } from "react";
-
-const Card = ({ image, price, name }) => {
+import React, { useState, useContext } from "react";
+import { context } from "./context";
+const Card = ({ image, price, name, but2 }) => {
   const [cartClick, setCartClick] = useState(false);
+  const { item, addItem } = useContext(context);
+
   const handle = () => {
     setCartClick(true);
   };
   return (
     <div className="contain">
       <img src={image} alt="rad" />
+
       {cartClick ? (
         <div>
           <p className="raspberry">{name}</p>
 
-          <p className="raspberry">
-            <span>&#8358;</span>
-            {price}
-          </p>
-          <div className="but1">
-            <i className="green big check icon"></i>
+          <div className="raspberry">
+            <span>
+              <span>&#8358;</span>
+              {price}
+            </span>
           </div>
-          <div className="but">
-            <div className="ui vertical  buttons">
-              <button className="ui  brown button">View Cart</button>
-              <button className=" ui button">Continue Shopping</button>
-            </div>
-          </div>
+          <div>{but2}</div>
         </div>
       ) : (
         <div>
@@ -37,11 +34,10 @@ const Card = ({ image, price, name }) => {
 
           <div className="but">
             <button
-              class="ui brown fluid right labeled icon button"
+              className="ui brown fluid right labeled icon button"
               onClick={handle}
             >
-              <i class="cart icon "></i>
-              Add to Cart
+              Order
             </button>
           </div>
         </div>

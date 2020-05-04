@@ -6,14 +6,15 @@ import { Context } from "./context";
 import App from "./App";
 import Amplify, { Auth } from "aws-amplify";
 import awsconfig from "./aws-exports";
+import { BrowserRouter as Router } from "react-router-dom";
 Amplify.configure(awsconfig);
 //import App from "./practice2/App";
 
 ReactDOM.render(
-  <React.StrictMode>
+  <Router>
     <Context>
       <App />
     </Context>
-  </React.StrictMode>,
+  </Router>,
   document.getElementById("root")
 );
