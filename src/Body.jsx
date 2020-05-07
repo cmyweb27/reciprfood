@@ -1,16 +1,29 @@
-import React, { useContext, useState, useEffect } from "react";
+import React, { useContext } from "react";
 import Card from "./Card";
 import { context } from "./context";
 import { Link } from "react-router-dom";
 
 const Body = () => {
-  const { data, item, addItem } = useContext(context);
+  const { data, item, addItem, cartF, cart } = useContext(context);
 
   const addQuantityF = (e) => {
+    if (cart.length > 0) {
+      cart.map((x, y) => {
+        if (x.id === e) {
+          cart.splice(y, 1);
+        }
+      });
+    }
+
     const fell = item.map((x) => {
       if (x.id === e) {
-        x.quantity = x.quantity + 1;
+        let price = x.productPrice / x.quantity;
+        x.quantity += 1;
+        x.productPrice += price;
+
+        cartF(x);
       }
+
       return x;
     });
     addItem(fell);
@@ -18,7 +31,9 @@ const Body = () => {
   const subtractQuantityF = (e) => {
     const fell = item.map((x) => {
       if (x.id === e && x.quantity > 1) {
-        x.quantity = x.quantity - 1;
+        let price = x.productPrice / x.quantity;
+        x.quantity -= 1;
+        x.productPrice -= price;
       }
       return x;
     });
@@ -26,11 +41,11 @@ const Body = () => {
   };
   return (
     <div className="wrapper">
-      {data.map((x, y) => (
+      {data.map((x) => (
         <div key={x.id}>
           <Card
             image="images/pizza-3.jpg"
-            price={x.productPrice * x.quantity}
+            price={x.productPrice}
             name={x.productName}
             but={
               <Link to="./Cart">
@@ -49,7 +64,7 @@ const Body = () => {
                   <button className="ui button">{x.quantity}</button>
                   <button
                     className="ui button"
-                    onClick={() => addQuantityF(x.id)}
+                    onClick={() => addQuantityF(x.id, x.productPrice)}
                   >
                     <i className="add icon"></i>
                   </button>

@@ -6,8 +6,9 @@ const context = React.createContext();
 
 const Context = ({ children }) => {
   const [data, setData] = useState([]);
-  const [cart, setCart] = useState("start");
+  const [cart, setCart] = useState([]);
   const [item, setItem] = useState([]);
+
   useEffect(() => {
     axios
       .get(" https://a01941cn7f.execute-api.eu-central-1.amazonaws.com/dev")
@@ -23,6 +24,9 @@ const Context = ({ children }) => {
         value={{
           data,
           cartF: (cee) => {
+            setCart([...cart, cee]);
+          },
+          cartD: (cee) => {
             setCart(cee);
           },
           cart,

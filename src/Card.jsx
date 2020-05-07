@@ -1,8 +1,7 @@
-import React, { useState, useContext } from "react";
-import { context } from "./context";
+import React, { useState } from "react";
+
 const Card = ({ image, price, name, but2 }) => {
   const [cartClick, setCartClick] = useState(false);
-  const { item, addItem } = useContext(context);
 
   const handle = () => {
     setCartClick(true);
