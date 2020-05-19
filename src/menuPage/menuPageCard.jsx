@@ -3,8 +3,9 @@ const MenuCard = ({ price, name }) => {
   return (
     <div className="menuCard">
       <div className="menuHeader">
-        <p>name {name} </p>
+        {" "}
         <p>price {price} </p>
+        <p>name {name} </p>
       </div>
     </div>
   );

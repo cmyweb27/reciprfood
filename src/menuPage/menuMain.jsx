@@ -1,8 +1,8 @@
 import React from "react";
-import "./menuPage.css";
+
 const MenuMain = () => {
   return (
-    <div className="wrap">
+    <div className="">
       <h1>in menumain</h1>
     </div>
   );
