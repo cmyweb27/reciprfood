@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./Navbar";
-
+import Slide from "./Slide";
 import Footer from "./Footer";
 import Body from "./Body";
 const Main = () => {
@@ -10,6 +10,7 @@ const Main = () => {
       <div className="">
         <Navbar />
       </div>
+      <Slide />
       <div className="">
         <Body />
       </div>

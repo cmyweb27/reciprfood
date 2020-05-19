@@ -1,17 +1,17 @@
-h1 {
+h1,
+h3,
+h2 {
   font-weight: 100;
   color: black;
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid rgb(79, 98, 148);
+  border-bottom: 1px solid black;
 }
 
 .form {
-  background: #9a5600;
-  display: grid;
-  grid-template-columns: minmax(400px, 1frs);
+  background: grey;
 
-  margin: 0 auto;
+  margin: 10px auto;
 }
 textarea,
 input {
@@ -19,7 +19,7 @@ input {
   box-sizing: border-box;
   width: 80%;
   border-radius: 4px;
-  border: 1px solid #9a5600;
+  border: 1px solid black;
   padding: 10px 15px;
   margin: 0 auto;
   font-size: 14px;
@@ -27,7 +27,7 @@ input {
 
 label {
   line-height: 2;
-  text-align: left;
+  text-align: center;
   display: block;
   margin: 0 auto;
 
@@ -37,8 +37,8 @@ label {
 }
 button[type="submit"],
 input[type="submit"] {
-  background: grey;
-  color: black;
+  background: black;
+  color: white;
   text-transform: uppercase;
   border: none;
   margin-top: 40px;

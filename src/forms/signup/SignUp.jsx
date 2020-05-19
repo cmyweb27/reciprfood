@@ -1,39 +1,26 @@
 import React, { useState } from "react";
 
 import { useForm } from "react-hook-form";
-//import ErrorMessage from "./ErrorMs";
+import ErrorMessage from "./ErrorMs";
 import "./SignUp.css";
 
 function SignUp() {
-  const [name, setName] = useState({});
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit, errors } = useForm();
   const onSubmit = (data) => {
-    setName(data);
-    console.log(data);
+    console.log(data, "data");
   };
   const handleChange = (e) => {};
-  console.log(name, "form object");
+
   return (
     <div>
-      <form className="form" onSubmit={handleSubmit(onSubmit)}>
-        <h1>Sign Up</h1>
-        <label>First Name:</label>
+      <form className="form contain" onSubmit={handleSubmit(onSubmit)}>
+        <h2>Delevery Address</h2>
+        <label>Name:</label>
         <input
-          onChange={handleChange}
           name="firstName"
-          ref={register({ required: true })}
+          ref={register({ required: true, minLength: 5 })}
         />
-
-        <label>password:</label>
-        <input
-          onChange={handleChange}
-          name="password"
-          type="password"
-          ref={register({ required: true, minLength: 2 })}
-        />
-
-        <label>Username</label>
-        <input name="username" ref={register({ required: true })} />
+        <ErrorMessage error={errors.firstName} />
 
         <label>Email</label>
         <input
@@ -41,7 +28,7 @@ function SignUp() {
           name="email"
           ref={register({ required: true, pattern: /^\S+@\S+$/i })}
         />
-
+        <ErrorMessage error={errors.email} />
         <label>Phone Number</label>
         <input
           onChange={handleChange}
@@ -49,14 +36,14 @@ function SignUp() {
           type="number"
           ref={register({ required: true, min: 11 })}
         />
-
+        <ErrorMessage error={errors.phonenumber} />
         <label>Delivery Address</label>
         <textarea
           onChange={handleChange}
           name="delvery address"
           ref={register}
         />
-
+        <ErrorMessage error={errors.deliveryaddress} />
         <input type="submit" />
       </form>
     </div>

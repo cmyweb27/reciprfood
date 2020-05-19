@@ -1,6 +1,6 @@
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-content: center;
 
   margin-bottom: 20px;
@@ -20,8 +20,6 @@
   top: 0px;
 }
 .logo {
-  color: #9a5600;
-  font-size: 2rem;
   align-self: center;
 }
 .menu-items {
@@ -60,8 +58,16 @@ li > a {
 
   margin: 20px auto 0px auto;
 }
-.cart {
+.checkout-button {
+  display: grid;
+  justify-content: center;
 }
+.orderpage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-content: center;
+}
+
 .order-cart {
   padding: 10px;
 }
@@ -89,7 +95,7 @@ img {
 
 .btn {
   display: flex;
-  justify-cart: center;
+  justify-content: center;
   text-align: center;
   padding: 7px 16px;
   margin: 20px 20px;
@@ -105,7 +111,7 @@ img {
 }
 .not {
   display: flex;
-  justify-cart: center;
+  justify-content: center;
 }
 .btn:hover {
   background-color: grey;
@@ -132,7 +138,7 @@ i {
 .footericons {
   grid-column: 5 / span 4;
   display: flex;
-  justify-cart: space-evenly;
+  justify-content: space-evenly;
   padding-top: 20px;
 }
 .fab {

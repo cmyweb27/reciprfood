@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-const Card = ({ image, price, name, but2 }) => {
+const Card = ({ image, price, name, but2, order, content }) => {
   const [cartClick, setCartClick] = useState(false);
-
   const handle = () => {
     setCartClick(true);
   };
+  console.log(content, "content");
   return (
     <div className="contain">
       <img src={image} alt="rad" />
@@ -13,7 +13,9 @@ const Card = ({ image, price, name, but2 }) => {
       {cartClick ? (
         <div>
           <p className="raspberry">{name}</p>
-
+          {content.map((x) => (
+            <p key={x}>{x}</p>
+          ))}
           <div className="raspberry">
             <span>
               <span>&#8358;</span>
@@ -31,10 +33,10 @@ const Card = ({ image, price, name, but2 }) => {
             {price}
           </p>
 
-          <div className="but">
+          <div className="but" onClick={handle}>
             <button
               className="ui brown fluid right labeled icon button"
-              onClick={handle}
+              onClick={order}
             >
               Order
             </button>

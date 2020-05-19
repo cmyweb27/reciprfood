@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 
 const Body = () => {
   const { data, item, addItem, cartF, cart } = useContext(context);
+  const order = (e) => {
+    item.map((x) => {
+      if (x.id === e) {
+        cartF(x);
+      }
+    });
+  };
 
   const addQuantityF = (e) => {
     if (cart.length > 0) {
@@ -47,6 +54,7 @@ const Body = () => {
             image="images/pizza-3.jpg"
             price={x.productPrice}
             name={x.productName}
+            content={x.content}
             but={
               <Link to="./Cart">
                 <button className="ui  brown button">View Cart</button>
@@ -72,6 +80,7 @@ const Body = () => {
                 <button className="ui  fluid brown button">View Cart</button>
               </div>
             }
+            order={() => order(x.id, x.productPrice)}
           />
         </div>
       ))}
