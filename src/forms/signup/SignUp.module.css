@@ -1,5 +1,6 @@
-h1,
-h2 {
+.h1,
+.h3,
+.h2 {
   font-weight: 100;
   color: black;
   text-align: center;
@@ -12,8 +13,8 @@ h2 {
 
   margin: 10px auto;
 }
-textarea,
-input {
+.textarea,
+.input {
   display: block;
   box-sizing: border-box;
   width: 80%;
@@ -24,7 +25,7 @@ input {
   font-size: 14px;
 }
 
-label {
+.label {
   line-height: 2;
   text-align: center;
   display: block;
@@ -34,8 +35,8 @@ label {
   font-size: 14px;
   font-weight: 200;
 }
-button[type="submit"],
-input[type="submit"] {
+.button[type="submit"],
+.input[type="submit"] {
   background: black;
   color: white;
   text-transform: uppercase;
@@ -46,28 +47,28 @@ input[type="submit"] {
   font-weight: 100;
   letter-spacing: 10px;
 }
-button[type="submit"]:hover,
-input[type="submit"]:hover {
+.button[type="submit"]:hover,
+.input[type="submit"]:hover {
   background: brown;
 }
 
-button[type="submit"]:active,
-input[type="button"]:active,
-input[type="submit"]:active {
+.button[type="submit"]:active,
+.input[type="button"]:active,
+.input[type="submit"]:active {
   transition: 0.3s all;
   transform: translateY(3px);
   border: 1px solid transparent;
   opacity: 0.8;
 }
 
-input:disabled {
+.input:disabled {
   opacity: 0.4;
 }
 
-input[type="button"]:hover {
+.input[type="button"]:hover {
   transition: 0.3s all;
 }
-button[type="button"] {
+.button[type="button"] {
   display: block;
   appearance: none;
   background: #333;
@@ -78,11 +79,11 @@ button[type="button"] {
   border-radius: 4px;
 }
 
-hr {
+.hr {
   margin-top: 30px;
 }
 
-button {
+.button {
   display: block;
   appearance: none;
   margin-top: 40px;
@@ -92,7 +93,7 @@ button {
   padding: 10px 20px;
   border-radius: 4px;
 }
-select {
+.select {
   width: 80%;
   margin: 0 auto;
 }
