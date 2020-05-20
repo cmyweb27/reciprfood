@@ -4,8 +4,8 @@ const MenuCard = ({ price, name }) => {
     <div className="menuCard">
       <div className="menuHeader">
         {" "}
-        <p>price {price} </p>
-        <p>name {name} </p>
+        <h3> {name} </h3>
+        <h3> {price} </h3>
       </div>
     </div>
   );

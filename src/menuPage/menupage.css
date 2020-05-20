@@ -2,7 +2,14 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-content: center;
-  background-color: blanchedalmond;
+
   margin-bottom: 200px;
   margin-top: 55px;
+}
+.menuCard {
+  border-bottom: solid #c3c0c0 1px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+  width: 85%;
+  text-align: center;
+  margin: 20px auto 0px auto;
 }
