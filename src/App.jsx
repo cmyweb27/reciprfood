@@ -5,21 +5,11 @@ import Cart from "./Cart";
 import { Route, Switch } from "react-router-dom";
 import SignUp from "./forms/signup/SignUp";
 import Order from "./Order";
-
-import axios from "axios";
+import MenuPage from "./menuPage/menuPage";
 
 function App() {
-  const Post = async () => {
-    await axios
-
-      .post(" https://g5hd36pvbk.execute-api.eu-central-1.amazonaws.com/dev", {
-        productName: "codeandbox",
-      })
-      .then((res) => console.log(res, "seems ok"))
-      .catch((err) => console.log(err, "error"));
-  };
   return (
-    <div className="">
+    <div className="app">
       <Switch>
         <Route exact path="/">
           <Main />
@@ -30,11 +20,12 @@ function App() {
         <Route exact path="/Cart">
           <Cart />
         </Route>
+        <Route exact path="/menu">
+          <MenuPage />
+        </Route>
       </Switch>
 
       <Order />
-
-      <button onClick={Post}>post</button>
     </div>
   );
 }

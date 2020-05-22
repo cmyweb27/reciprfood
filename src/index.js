@@ -1,7 +1,7 @@
 import React from "react";
 
 import ReactDOM from "react-dom";
-import MenuPage from "./menuPage/menuPage";
+
 import "semantic-ui-css/semantic.min.css";
 import { Context } from "./context";
 import App from "./App";
@@ -14,7 +14,7 @@ Amplify.configure(awsconfig);
 ReactDOM.render(
   <Router>
     <Context>
-      <MenuPage />
+      <App />
     </Context>
   </Router>,
   document.getElementById("root")

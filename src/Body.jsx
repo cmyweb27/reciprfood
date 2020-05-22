@@ -51,7 +51,7 @@ const Body = () => {
       {data.map((x) => (
         <div key={x.id}>
           <Card
-            image="images/pizza-3.jpg"
+            image="images/pizza-1.jpg"
             price={x.productPrice}
             name={x.productName}
             content={x.content}
