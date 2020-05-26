@@ -5,9 +5,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-content: center;
-
-  margin-bottom: 20px;
   margin-top: 55px;
+  margin-bottom: 20px;
 }
 .icon {
   margin: 0px;

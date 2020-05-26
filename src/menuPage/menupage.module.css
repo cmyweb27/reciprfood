@@ -1,28 +1,33 @@
 .menu {
   background-color: rgb(58, 54, 54);
 }
+.navbartitle {
+  margin: 0px;
+}
+.menuCarousel {
+  margin-top: 15px;
+}
 .wrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   justify-content: center;
 
   margin-bottom: 20px;
-  margin-top: 55px;
 }
 .menuCard {
   border-bottom: solid #c3c0c0 1px;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
   width: 85%;
   text-align: center;
-
   color: white;
   margin: 20px auto 0px auto;
 }
-.menuHeader {
-}
+
 .h3 {
   margin-top: 0;
   margin-bottom: 0;
+  color: #9a5600;
+  text-align: center;
 }
 .title {
   text-align: center;
@@ -30,10 +35,7 @@
 .contentDiv {
   margin: 10px 0 10px 0;
 }
-.p {
-  margin-bottom: 7px;
-  font-size: 1.15rem;
-}
+
 .contentButton {
   width: 60%;
 
@@ -49,31 +51,38 @@
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-.catering {
+.catering,
+.location,
+.trademark {
   width: 85%;
   text-align: center;
+  margin: 20px auto 20px auto;
+  color: whitesmoke;
+}
 
-  color: white;
-  margin: 5px auto 0px auto;
-}
-.location {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
 .menuFooterIcons {
   display: grid;
   justify-content: center;
   align-items: center;
 }
-.menuFooterTrademark {
+.trademark {
   margin-top: 20px;
   margin-bottom: 20px;
   padding-bottom: 20px;
   display: grid;
   justify-content: center;
 }
-.p {
-  margin-bottom: 0px;
+.contentP {
   text-align: center;
-  color: whitesmoke;
+  color: #f8ddb9;
+  margin-bottom: 7px;
+  font-size: 1.15rem;
+}
+.orderButton {
+  color: #9a5600;
+}
+.eventCateringP,
+.locationP,
+.trademarkP {
+  margin: 2px;
 }

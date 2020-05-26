@@ -1,6 +1,7 @@
 import React from "react";
 import Swiper from "react-id-swiper";
 import "swiper/css/swiper.css";
+
 const Slide = () => {
   const params = {
     effect: "flip",
@@ -16,16 +17,15 @@ const Slide = () => {
   };
 
   return (
-    <div className="contain">
-      <h1>in slided</h1>{" "}
+    <div className="">
       <Swiper {...params}>
-        <div className="swipe">
+        <div className={`swipe `}>
           <img src="images/IMG_9427.JPG" alt="swipe" />
         </div>
-        <div className="swipe">
+        <div className={`swipe`}>
           <img src="images/IMG_9431.JPG" alt="swipe" />
         </div>
-        <div className="swipe">
+        <div className={`swipe`}>
           <img src="images/IMG_9440.JPG" alt="swipe" />
         </div>
       </Swiper>

@@ -8,7 +8,7 @@ const Context = ({ children }) => {
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
   const [item, setItem] = useState([]);
-
+  const [basket, setBasket] = useState([]);
   useEffect(() => {
     axios
       .get(" https://a01941cn7f.execute-api.eu-central-1.amazonaws.com/dev")
@@ -22,6 +22,10 @@ const Context = ({ children }) => {
     <div>
       <context.Provider
         value={{
+          itemBasket: (item) => {
+            setBasket([...basket, item]);
+          },
+          basket,
           data,
           cartF: (cee) => {
             setCart([...cart, cee]);
@@ -29,6 +33,7 @@ const Context = ({ children }) => {
           cartD: (cee) => {
             setCart(cee);
           },
+
           cart,
           item,
           addItem: (cee) => {

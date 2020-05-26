@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useContext, useEffect } from "react";
 import style from "./menupage.module.css";
-const MenuCard = ({ price, name, content }) => {
+import { context } from "../context";
+const MenuCard = ({ price, name, content, id }) => {
+  const { data, basket, itemBasket } = useContext(context);
+  const order = (e) => {
+    data.map((x) => (x.id === e && x ? itemBasket(x) : null));
+    console.log(basket, "been clicked");
+  };
+
   return (
     <div className={style.menuCard}>
       <div className={style.menuHeader}>
@@ -15,13 +22,15 @@ const MenuCard = ({ price, name, content }) => {
       <div className={style.contentDiv}>
         {" "}
         {content.map((x) => (
-          <p key={x} className={style.p}>
+          <p key={x} className={style.contentP}>
             {x}
           </p>
         ))}
       </div>
       <div className={style.contentButton}>
-        <button className="ui brown fluid button">Order</button>
+        <button onClick={() => order(id)} className="ui brown fluid button">
+          Order
+        </button>
       </div>
     </div>
   );
