@@ -6,10 +6,13 @@ import { Route, Switch } from "react-router-dom";
 import SignUp from "./forms/signup/SignUp";
 import Order from "./Order";
 import MenuPage from "./menuPage/menuPage";
+import Basket from "./basket/Basket";
+import SideBar from "./practice2/SideBar";
 
 function App() {
   return (
     <div className="app">
+      <SideBar />
       <Switch>
         <Route exact path="/">
           <Main />
@@ -22,6 +25,9 @@ function App() {
         </Route>
         <Route exact path="/menu">
           <MenuPage />
+        </Route>
+        <Route exact path="/basket">
+          <Basket />
         </Route>
       </Switch>
 

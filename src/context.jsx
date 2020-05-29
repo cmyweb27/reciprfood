@@ -25,6 +25,9 @@ const Context = ({ children }) => {
           itemBasket: (item) => {
             setBasket([...basket, item]);
           },
+          setBasket: (item) => {
+            setBasket(item);
+          },
           basket,
           data,
           cartF: (cee) => {

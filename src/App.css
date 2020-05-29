@@ -1,5 +1,5 @@
 .app {
-  background-color: rgb(58, 54, 54);
+  background-color: rgb(54, 51, 51);
 }
 .wrapper {
   display: grid;
@@ -17,12 +17,9 @@
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 60px;
 
-  position: fixed;
   width: 100%;
-  top: 0px;
 }
 .logo {
-  align-self: center;
 }
 .menu-items {
   grid-column: 7 / span 5;

@@ -13,12 +13,9 @@ function SignUp() {
 
   return (
     <div>
-      <form
-        className={(style.form, style.contain)}
-        onSubmit={handleSubmit(onSubmit)}
-      >
-        <h2 className={style.h2}>Delevery Address</h2>
-        <label className={style.label}>Name:</label>
+      <form className={style.form} onSubmit={handleSubmit(onSubmit)}>
+        <h2 className={style.h2}>Delevery Details</h2>
+        <label className={style.label}>Name</label>
         <input
           className={style.input}
           name="firstName"
@@ -38,20 +35,25 @@ function SignUp() {
         <input
           className={style.input}
           onChange={handleChange}
-          name="phone number"
+          name="phonenumber"
           type="number"
           ref={register({ required: true, min: 11 })}
         />
         <ErrorMessage error={errors.phonenumber} />
-        <label className={style.label}>Delivery Address</label>
+        <label className={style.label}> Address</label>
         <textarea
           className={style.textarea}
           onChange={handleChange}
-          name="delvery address"
-          ref={register}
+          name="deliveryaddress"
+          ref={register({ required: true, min: 11 })}
         />
         <ErrorMessage error={errors.deliveryaddress} />
-        <input className={style.input} type="submit" />
+        {/*<input className={style.input} type="submit" />*/}
+        <div className={style.submitButton}>
+          <button type="submit" className={`ui brown button fluid`}>
+            Order Now
+          </button>
+        </div>
       </form>
     </div>
   );

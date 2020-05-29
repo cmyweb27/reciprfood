@@ -6,9 +6,9 @@ export default (props) => {
     <Menu width={"100%"}>
       <Link to="/">Home</Link>
 
-      <Link to="/Cart">Cart</Link>
+      <Link to="/basket">Cart</Link>
 
-      <Link to="/pizzas">Pizzas</Link>
+      <Link to="/menu">Menu</Link>
 
       <Link to="/desserts">Drinks</Link>
     </Menu>

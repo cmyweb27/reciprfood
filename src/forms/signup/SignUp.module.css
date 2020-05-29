@@ -2,24 +2,22 @@
 .h3,
 .h2 {
   font-weight: 100;
-  color: black;
+  color: whitesmoke;
   text-align: center;
   padding-bottom: 10px;
-  border-bottom: 1px solid blue;
 }
 
 .form {
-  background: grey;
-
-  margin: 10px auto;
+  margin: 40px auto;
+  width: 80%;
 }
 .textarea,
 .input {
   display: block;
   box-sizing: border-box;
-  width: 80%;
+  width: 100%;
   border-radius: 4px;
-  border: 1px solid black;
+  border: 1px solid #9a5600;
   padding: 10px 15px;
   margin: 0 auto;
   font-size: 14px;
@@ -31,14 +29,14 @@
   display: block;
   margin: 0 auto;
 
-  color: white;
+  color: whitesmoke;
   font-size: 14px;
   font-weight: 200;
 }
 .button[type="submit"],
 .input[type="submit"] {
   background: black;
-  color: white;
+  color: whitesmoke;
   text-transform: uppercase;
   border: none;
   margin-top: 40px;
@@ -96,4 +94,13 @@
 .select {
   width: 80%;
   margin: 0 auto;
+}
+.submitButton {
+  width: 100%;
+  margin: 20px auto;
+}
+.errorMessage {
+  color: #9a5600;
+  width: 70%;
+  margin: 0px;
 }

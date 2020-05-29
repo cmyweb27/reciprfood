@@ -115,9 +115,7 @@ const CartPage = () => {
             </div>
           </div>
         </div>
-      ) : (
-        <p>no item in cart</p>
-      )}
+      ) : null}
     </div>
   );
 };

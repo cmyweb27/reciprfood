@@ -4,8 +4,14 @@ import "swiper/css/swiper.css";
 
 const Slide = () => {
   const params = {
-    effect: "flip",
+    effect: "cube",
     grabCursor: true,
+    cubeEffect: {
+      shadow: true,
+      slideShadows: true,
+      shadowOffset: 20,
+      shadowScale: 0.94,
+    },
     pagination: {
       el: ".swiper-pagination",
     },

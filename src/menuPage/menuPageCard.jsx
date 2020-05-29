@@ -1,11 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext, useState } from "react";
 import style from "./menupage.module.css";
 import { context } from "../context";
+import { Link } from "react-router-dom";
 const MenuCard = ({ price, name, content, id }) => {
-  const { data, basket, itemBasket } = useContext(context);
+  const [click, setClick] = useState(false);
+  const { data, itemBasket } = useContext(context);
   const order = (e) => {
-    data.map((x) => (x.id === e && x ? itemBasket(x) : null));
-    console.log(basket, "been clicked");
+    setClick(true);
+    data.map((x) => (x.id === e ? itemBasket(x) : null));
   };
 
   return (
@@ -28,9 +30,18 @@ const MenuCard = ({ price, name, content, id }) => {
         ))}
       </div>
       <div className={style.contentButton}>
-        <button onClick={() => order(id)} className="ui brown fluid button">
-          Order
-        </button>
+        {click ? (
+          <button className="ui brown fluid button">
+            {" "}
+            <Link to="/basket" className={style.link}>
+              View cart
+            </Link>
+          </button>
+        ) : (
+          <button onClick={() => order(id)} className="ui brown fluid button">
+            order
+          </button>
+        )}
       </div>
     </div>
   );

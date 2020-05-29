@@ -29,9 +29,12 @@ body {
 
   /* Our sidebar item styling */
   text-decoration: none;
-  margin-bottom: 10px;
-  color: #cc1515;
+
+  color: #9a5600;
   transition: color 0.2s;
+  font-size: 2rem;
+  text-align: center;
+  padding: 15px;
 }
 
 /* Change color on hover */
@@ -47,7 +50,7 @@ body {
   height: 30px;
   right: 19px;
   top: 15px;
-  position: fixed;
+  position: absolute;
 }
 /* Color/shape of burger icon bars */
 .bm-burger-bars {
@@ -62,12 +65,12 @@ body {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #bdc3c7;
+  background: #9a5600;
 }
 
 /* General sidebar styles */
 .bm-menu {
-  background: #ebedf3e8;
+  background-color: rgb(54, 51, 51);
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }
@@ -84,7 +87,7 @@ body {
 
 /* Styling of overlay */
 .bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
+  background: grey;
 }
 @media (min-width: 500px) {
   .bm-burger-button {
