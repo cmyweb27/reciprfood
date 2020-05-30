@@ -31,12 +31,9 @@ const MenuCard = ({ price, name, content, id }) => {
       </div>
       <div className={style.contentButton}>
         {click ? (
-          <button className="ui brown fluid button">
-            {" "}
-            <Link to="/basket" className={style.link}>
-              View cart
-            </Link>
-          </button>
+          <Link to="/basket">
+            <button className="ui brown fluid button">View cart</button>
+          </Link>
         ) : (
           <button onClick={() => order(id)} className="ui brown fluid button">
             order

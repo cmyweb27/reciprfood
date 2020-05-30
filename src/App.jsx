@@ -1,13 +1,12 @@
 import React from "react";
-import Main from "./Main";
-import Cart from "./Cart";
 
 import { Route, Switch } from "react-router-dom";
-import SignUp from "./forms/signup/SignUp";
-import Order from "./Order";
+import "./App.css";
+import "./style.css";
 import MenuPage from "./menuPage/menuPage";
 import Basket from "./basket/Basket";
 import SideBar from "./practice2/SideBar";
+import HomePage from "./homePage/homePage";
 
 function App() {
   return (
@@ -15,14 +14,9 @@ function App() {
       <SideBar />
       <Switch>
         <Route exact path="/">
-          <Main />
+          <HomePage />
         </Route>
-        <Route exact path="/SignUp">
-          <SignUp />
-        </Route>
-        <Route exact path="/Cart">
-          <Cart />
-        </Route>
+
         <Route exact path="/menu">
           <MenuPage />
         </Route>
@@ -30,8 +24,6 @@ function App() {
           <Basket />
         </Route>
       </Switch>
-
-      <Order />
     </div>
   );
 }

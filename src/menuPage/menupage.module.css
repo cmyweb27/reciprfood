@@ -52,12 +52,7 @@
   color: #9a5600;
   padding: 5px;
 }
-.wait {
-  background-image: url("/images/menuBackground.jpg");
 
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
 .catering,
 .location,
 .trademark {
