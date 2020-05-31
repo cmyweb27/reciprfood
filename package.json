@@ -1,5 +1,4 @@
 {
-  "homepage": "http//cmyweb27.github.io/reciprfood",
   "name": "recipefood",
   "version": "0.1.0",
   "private": true,
@@ -20,13 +19,13 @@
     "semantic-ui-css": "^2.4.1",
     "swiper": "^5.3.8"
   },
+  "homepage": "https://cmyweb27.github.io/reciprfood",
   "scripts": {
-    "predeploy": "npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "gh-pages -d build"
+    "deploy": "aws s3 sync build/ s3://svlunchboxncocktails.com"
   },
   "eslintConfig": {
     "extends": "react-app"
