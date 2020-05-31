@@ -2,19 +2,24 @@ import React from "react";
 import styles from "./homePage.module.css";
 import Slide from "../Slide";
 import { Link } from "react-router-dom";
+
+import HomeCard from "./homeCard";
 const HomePage = () => {
   return (
     <div>
-      <h1>home page</h1>
-      <Slide />
-      <p className={styles.title}>Svlunchbox</p>
+      <h1 className={styles.navbartitle}>SV-LUNCHBOX</h1>
+      <p className={styles.navbartitleP}>&Cocktails</p>
+      <div className={styles.menuCarousel}>
+        <Slide />
+      </div>
+
       <div>
         <p className={styles.intro}>
           Enjoy the ultimate barbecue experience in Nigeria. Our range of mouth
           watering and nourishing barbecue and food offerings are specially
           curated to delight your taste buds. Black boxes loaded with the best
           Barbecue combos to give you the happiness and excitement good food
-          brings. Established in 2010, Kmac Grill has become the favourite of
+          brings. Established in 2010, Sv-LunchBox has become the favourite of
           grilled food lovers. Visit our outlets located at Lekki, Ikeja and
           Gbagada for pick Up or Order Online, we provide delivery to several
           parts of Lagos. We also cater to all kind of events on request.{" "}
@@ -22,11 +27,17 @@ const HomePage = () => {
       </div>
 
       <div className={styles.grid}>
-        <div>
+        <div className={styles.gridImage}>
           <img src="images/IMG_9427.JPG" alt="swipe" />
         </div>
-        <div>
-          <img src="images/IMG_9427.JPG" alt="swipe" />
+        <div className={styles.gridImage}>
+          <img src="images/fullplatter.JPG" alt="swipe" />
+        </div>
+        <div className={styles.gridImage}>
+          <img src="images/pancake.JPG" alt="swipe" />
+        </div>
+        <div className={styles.gridImage}>
+          <img src="images/crap.JPG" alt="swipe" />
         </div>
       </div>
       <div className={styles.viewMenuButton}>
@@ -43,6 +54,14 @@ const HomePage = () => {
             For enquiries:
           </p>
           <p> Please call 08035465977</p>
+        </div>
+        <div className={styles.grid}>
+          <div className={styles.gridImage}>
+            <img src="images/gtb pic.JPG" alt="swipe" />
+          </div>
+          <div className={styles.gridImage}>
+            <img src="images/_DSC0056.jpg" alt="swipe" />
+          </div>
         </div>
         <div className={styles.location}>
           <h3 className={styles.h3}>Locations</h3>
@@ -66,7 +85,6 @@ const HomePage = () => {
         </div>
         <div className={styles.trademark}>
           <p className={styles.trademarkP}>Sv-LunchBox| All Rights Reserved</p>
-          <p>Produced by Carlo</p>
         </div>
       </div>
     </div>

@@ -144,7 +144,6 @@ const Basket = () => {
       </div>
       <div className={style.trademark}>
         <p className={style.trademarkP}>Sv-LunchBox| All Rights Reserved</p>
-        <p>Produced by Carlo</p>
       </div>
     </div>
   );

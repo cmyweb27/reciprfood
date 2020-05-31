@@ -5,6 +5,7 @@ import axios from "axios";
 const context = React.createContext();
 
 const Context = ({ children }) => {
+  const [menuOpenState, setMenuOpenState] = useState(false);
   const [data, setData] = useState([]);
   const [cart, setCart] = useState([]);
   const [item, setItem] = useState([]);
@@ -42,6 +43,9 @@ const Context = ({ children }) => {
           addItem: (cee) => {
             setData(cee);
           },
+          isMenuOpen: menuOpenState,
+          toggleMenu: () => setMenuOpenState(!menuOpenState),
+          stateChangeHandler: (newState) => setMenuOpenState(newState.isOpen),
         }}
       >
         {children}

@@ -4,11 +4,21 @@
 .link {
   color: whitesmoke;
 }
+
 .navbartitle {
+  font-family: "Nosifer", cursive;
   display: flex;
   align-content: center;
-  margin: 0px;
+  padding: 20px 0px 0px 7px;
   text-align: center;
+  color: #9a5600;
+  font-size: 1.6rem;
+  margin-bottom: 0px;
+}
+.navbartitleP {
+  color: #c3c0c0;
+  font-weight: 600;
+  padding-left: 7px;
 }
 .menuCarousel {
   margin-top: 15px;

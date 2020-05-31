@@ -9,7 +9,8 @@ const MenuPage = () => {
 
   return (
     <div className={styles.menu}>
-      <h1 className={styles.navbartitle}>navbar</h1>
+      <h1 className={styles.navbartitle}>SV-LUNCHBOX</h1>
+      <p className={styles.navbartitleP}>&Cocktails</p>
       <div className={styles.menuCarousel}>
         <Slide />
       </div>
@@ -74,7 +75,6 @@ const MenuPage = () => {
       </div>
       <div className={styles.trademark}>
         <p className={styles.trademarkP}>Sv-LunchBox| All Rights Reserved</p>
-        <p>Produced by Carlo</p>
       </div>
     </div>
   );

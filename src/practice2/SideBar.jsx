@@ -1,16 +1,29 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import { stack as Menu } from "react-burger-menu";
 import { Link } from "react-router-dom";
+import { context } from "../context";
 export default (props) => {
+  const ctx = useContext(context);
   return (
-    <Menu width={"100%"}>
-      <Link to="/">Home</Link>
+    <Menu
+      isOpen={ctx.isMenuOpen}
+      onStateChange={(state) => ctx.stateChangeHandler(state)}
+      width={"100%"}
+    >
+      <Link onClick={ctx.toggleMenu} to="/">
+        Home
+      </Link>
 
-      <Link to="/basket">Cart</Link>
+      <Link onClick={ctx.toggleMenu} to="/menu">
+        Menu
+      </Link>
 
-      <Link to="/menu">Menu</Link>
-
-      <Link to="/desserts">Drinks</Link>
+      <Link onClick={ctx.toggleMenu} to="/gallery">
+        Gallery
+      </Link>
+      <Link onClick={ctx.toggleMenu} to="/about-us">
+        About-Us
+      </Link>
     </Menu>
   );
 };

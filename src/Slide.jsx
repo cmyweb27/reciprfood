@@ -25,14 +25,14 @@ const Slide = () => {
   return (
     <div className="">
       <Swiper {...params}>
-        <div className={`swipe `}>
+        <div className={` imagegrid`}>
           <img src="images/IMG_9427.JPG" alt="swipe" />
         </div>
-        <div className={`swipe`}>
-          <img src="images/IMG_9431.JPG" alt="swipe" />
+        <div className={`imagegrid`}>
+          <img src="images/IMG_9428.JPG" alt="swipe" />
         </div>
-        <div className={`swipe`}>
-          <img src="images/IMG_9440.JPG" alt="swipe" />
+        <div className={` imagegrid`}>
+          <img src="images/IMG_9440.JPG" height="150px" alt="swipe" />
         </div>
       </Swiper>
     </div>
