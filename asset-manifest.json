@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/svlunchboxncocktails/static/css/main.0aa1e7ff.chunk.css",
+    "main.js": "/svlunchboxncocktails/static/js/main.6c1dbb73.chunk.js",
+    "main.js.map": "/svlunchboxncocktails/static/js/main.6c1dbb73.chunk.js.map",
+    "runtime-main.js": "/svlunchboxncocktails/static/js/runtime-main.0bde2342.js",
+    "runtime-main.js.map": "/svlunchboxncocktails/static/js/runtime-main.0bde2342.js.map",
+    "static/css/2.1d9a7d86.chunk.css": "/svlunchboxncocktails/static/css/2.1d9a7d86.chunk.css",
+    "static/js/2.165f69b9.chunk.js": "/svlunchboxncocktails/static/js/2.165f69b9.chunk.js",
+    "static/js/2.165f69b9.chunk.js.map": "/svlunchboxncocktails/static/js/2.165f69b9.chunk.js.map",
+    "index.html": "/svlunchboxncocktails/index.html",
+    "precache-manifest.3e311c6dad3d1f5220c6c3ef127415ae.js": "/svlunchboxncocktails/precache-manifest.3e311c6dad3d1f5220c6c3ef127415ae.js",
+    "service-worker.js": "/svlunchboxncocktails/service-worker.js",
+    "static/css/2.1d9a7d86.chunk.css.map": "/svlunchboxncocktails/static/css/2.1d9a7d86.chunk.css.map",
+    "static/css/main.0aa1e7ff.chunk.css.map": "/svlunchboxncocktails/static/css/main.0aa1e7ff.chunk.css.map",
+    "static/js/2.165f69b9.chunk.js.LICENSE.txt": "/svlunchboxncocktails/static/js/2.165f69b9.chunk.js.LICENSE.txt",
+    "static/media/semantic.min.css": "/svlunchboxncocktails/static/media/outline-icons.ef60a4f6.woff"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0bde2342.js",
+    "static/css/2.1d9a7d86.chunk.css",
+    "static/js/2.165f69b9.chunk.js",
+    "static/css/main.0aa1e7ff.chunk.css",
+    "static/js/main.6c1dbb73.chunk.js"
+  ]
+}
