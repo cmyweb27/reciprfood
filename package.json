@@ -9,7 +9,6 @@
     "@testing-library/user-event": "^7.2.1",
     "aws-amplify": "^3.0.9",
     "axios": "^0.19.2",
-    "gh-pages": "^3.0.0",
     "react": "^16.13.1",
     "react-burger-menu": "^2.6.13",
     "react-dom": "^16.13.1",
@@ -20,7 +19,7 @@
     "semantic-ui-css": "^2.4.1",
     "swiper": "^5.3.8"
   },
-  "homepage": "https://cmyweb27.github.io/reciprfood",
+  "homepage": "https://cmyweb27.github.io/svlunchboxncocktails",
   "scripts": {
     "predeploy": "npm run build",
     "start": "react-scripts start",
