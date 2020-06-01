@@ -2,8 +2,13 @@ import React from "react";
 import styles from "./homePage.module.css";
 import Slide from "../Slide";
 import { Link } from "react-router-dom";
+import logo from "../images/IMG_9427.JPG";
+import log2 from "../images/fullplatter.jpg";
+import log3 from "../images/pancake.JPG";
+import log4 from "../images/crap.JPG";
+import log5 from "../images/gtb pic.JPG";
+import log6 from "../images/_DSC0056.jpg";
 
-import HomeCard from "./homeCard";
 const HomePage = () => {
   return (
     <div>
@@ -28,16 +33,16 @@ const HomePage = () => {
 
       <div className={styles.grid}>
         <div className={styles.gridImage}>
-          <img src="images/IMG_9427.JPG" alt="swipe" />
+          <img src={logo} alt="swipe" />
         </div>
         <div className={styles.gridImage}>
-          <img src="images/fullplatter.JPG" alt="swipe" />
+          <img src={log2} alt="swipe" />
         </div>
         <div className={styles.gridImage}>
-          <img src="images/pancake.JPG" alt="swipe" />
+          <img src={log3} alt="swipe" />
         </div>
         <div className={styles.gridImage}>
-          <img src="images/crap.JPG" alt="swipe" />
+          <img src={log4} alt="swipe" />
         </div>
       </div>
       <div className={styles.viewMenuButton}>
@@ -57,10 +62,10 @@ const HomePage = () => {
         </div>
         <div className={styles.grid}>
           <div className={styles.gridImage}>
-            <img src="images/gtb pic.JPG" alt="swipe" />
+            <img src={log5} alt="swipe" />
           </div>
           <div className={styles.gridImage}>
-            <img src="images/_DSC0056.jpg" alt="swipe" />
+            <img src={log6} alt="swipe" />
           </div>
         </div>
         <div className={styles.location}>
