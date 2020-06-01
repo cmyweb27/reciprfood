@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0c4a56a95bb6d0a8c047afe0d211331a",
+    "revision": "f30a82f38392a15903016dc15e5897b2",
     "url": "/svlunchboxncocktails/index.html"
   },
   {
-    "revision": "6ed3beec8ec8584cac9e",
+    "revision": "b23163bd34a24f742144",
     "url": "/svlunchboxncocktails/static/css/2.1d9a7d86.chunk.css"
   },
   {
-    "revision": "762a20fa0ba5095085ea",
+    "revision": "00bbefe846a9c4c70346",
     "url": "/svlunchboxncocktails/static/css/main.0aa1e7ff.chunk.css"
   },
   {
-    "revision": "6ed3beec8ec8584cac9e",
-    "url": "/svlunchboxncocktails/static/js/2.165f69b9.chunk.js"
+    "revision": "b23163bd34a24f742144",
+    "url": "/svlunchboxncocktails/static/js/2.4f3f8ef9.chunk.js"
   },
   {
     "revision": "cc539bb4a85cbe0e42d76df177ff76fc",
-    "url": "/svlunchboxncocktails/static/js/2.165f69b9.chunk.js.LICENSE.txt"
+    "url": "/svlunchboxncocktails/static/js/2.4f3f8ef9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "762a20fa0ba5095085ea",
-    "url": "/svlunchboxncocktails/static/js/main.6c1dbb73.chunk.js"
+    "revision": "00bbefe846a9c4c70346",
+    "url": "/svlunchboxncocktails/static/js/main.75a64988.chunk.js"
   },
   {
     "revision": "24447abd789c1831ba97",
