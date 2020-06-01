@@ -49,6 +49,8 @@ const Basket = () => {
       : 8;
   return (
     <div>
+      <h1 className={styles.navbartitle}>SV-LUNCHBOX</h1>
+      <p className={styles.navbartitleP}>&Cocktails</p>
       <h1 className={styles.menuPageTitle}>Cart</h1>
       {/*{basket.length > 0 && (
         <h3 className={styles.basketItem}>
@@ -63,7 +65,7 @@ const Basket = () => {
               className={styles.basketItemRight}
               onClick={() => handleDelet(x.id)}
             >
-              <i className="trash alternate outline icon large red"></i>
+              <i className="trash alternate outline icon large"></i>
             </div>
           </div>
           <div className={styles.basketItem}>
